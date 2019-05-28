@@ -3,19 +3,22 @@
 ## Requirements
 You should work in a virtual environment. To do that, install venv - <https://docs.python.org/3/library/venv.html>
 ```
-sudo apt-get install python3-venv
+sudo apt-get install virtualenv
 ```
-## Setup
+## Create and use a virtual environment
 ```
-python3 -m venv ml-regression
-source ml-regression/bin/activate
-pip install pandas
-pip install scikit-learn[alldeps]
-pip install jupyterlab
+cd <your environment folder>
+virtualenv my_env
+. my_env/bin/activate
+```
+## Install software
+```
+cd <into project folder>
+pip install --user -r requirements.txt
 ```
 ## Usage
 To work interactively with the notebooks
 ```
-cd introduksjon
-jupyter lab
+cd notebooks
+jupyter notebook
 ```
