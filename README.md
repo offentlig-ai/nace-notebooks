@@ -1,7 +1,7 @@
 # Fastsettelse av næringkoder basert på tekstlig beskrivelse av virksomheten
 
 ## Requirements
-You should work in a virtual environment. To do that, install venv - <https://docs.python.org/3/library/venv.html>
+You should work in a virtual environment. To do that, install [virtualenv](https://docs.python.org/3/library/venv.html)
 ```
 sudo apt-get install virtualenv
 ```
