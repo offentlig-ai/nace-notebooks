@@ -1,0 +1,2 @@
+- [ ] Upload the model to Cloud Storage, cf <https://cloud.google.com/ml-engine/docs/deploying-models>
+- [ ] Decide wich files should be added to .gitignore
