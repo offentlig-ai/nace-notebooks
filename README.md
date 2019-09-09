@@ -2,10 +2,10 @@
 
 ## Requirements
 
-You should work in a virtual environment. To do that, install [virtualenv](https://docs.python.org/3/library/venv.html)
+You should work in a virtual environment. To do that, install [venv](https://docs.python.org/3/library/venv.html)
 
 ```
-sudo apt-get install virtualenv
+sudo apt-get install python3-venv
 ```
 
 To work with the large datasets and git, you need to install Git Large File Support:
@@ -19,22 +19,31 @@ git lfs pull
 
 ```
 cd <your environment folder>
-virtualenv my_env
-. my_env/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
 ## Install software
 
 ```
-cd <into project folder>
-pip3 install -r requirements.txt
+pip3 install wheel
+pip3 install --no-cache-dir -r requirements.txt
 ```
 
 ## Usage
 
-To work interactively with the notebooks
+To work interactively with the notebooks, you need to install a ipykernel inside your virtual environment
 
 ```
+python -m ipykernel install --user --name .venv --display-name "Python (.venv)"
 cd notebooks
 jupyter notebook
+```
+
+You then need to choose you the kernel you installed.
+
+## Deactivate your virtualenv
+
+```
+deactivate
 ```
