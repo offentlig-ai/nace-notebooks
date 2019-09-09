@@ -1,81 +1,16 @@
-# First make sure to update pip:
-#     $ sudo pip install --upgrade pip
-#
-# Then you probably want to work in a virtualenv (optional):
-#     $ sudo pip install --upgrade virtualenv
-# Or if you prefer you can install virtualenv using your favorite packaging
-# system. E.g., in Ubuntu:
-#     $ sudo apt-get update && sudo apt-get install virtualenv
-# Then:
-#     $ cd $my_work_dir
-#     $ virtualenv my_env
-#     $ . my_env/bin/activate
-#
-# Next, optionally uncomment the OpenAI gym lines (see below).
-# If you do, make sure to install the dependencies first.
-# If you are interested in xgboost for high performance Gradient Boosting, you
-# should uncomment the xgboost line (used in the ensemble learning notebook).
-#
-# Then install these requirements:
-#     $ pip install -r requirements.txt
-#
-# Finally, start jupyter:
-#     $ cd notebooks
-#     $ jupyter notebook
-#
-
-wheel==0.33.6
 
 ##### Core scientific packages
 jupyter==1.0.0
+ipykernel
 matplotlib==3.1.1
 numpy==1.17.1
 pandas==0.25.1
 scipy==1.3.1
 
+##### Machine Learning packages
+scikit-learn==0.21.3
+
 ###### NLP packages
 spacy==2.0.13
 https://github.com/navikt/ai-lab-spacy-bokmaal/raw/master/nb_ud_ner-0.0.1/dist/nb_ud_ner-0.0.1.tar.gz
 fastText
-
-##### Machine Learning packages
-scikit-learn==0.21.3
-
-##### Deep Learning packages
-
-# Replace tensorflow with tensorflow-gpu if you want GPU support. If so,
-# you need a GPU card with CUDA Compute Capability 3.0 or higher support, and
-# you must install CUDA, cuDNN and more: see tensorflow.org for the detailed
-# installation instructions.
-tensorflow==1.14.0
-#tensorflow-gpu==1.8.0
-
-# Forcing bleach to 1.5 to avoid version incompatibility when installing
-# TensorBoard.
-bleach==3.1.0
-
-Keras==2.2.5
-
-
-##### Image manipulation
-imageio==2.5.0
-Pillow==6.1.0
-scikit-image==0.15.0
-
-
-##### Extra packages (optional)
-
-# Nice utility to diff Jupyter Notebooks.
-nbdime==1.1.0
-
-# May be useful with Pandas for complex "where" clauses (e.g., Pandas
-# tutorial).
-#numexpr==2.6.9
-
-# Optional: this extension is handy to easily start/stop tensorboard
-# server(s) directly from Jupyter.
-#jupyter-tensorboard==0.1.10
-
-# Optional: these are useful Jupyter extensions, in particular to display the
-# table of contents
-jupyter-contrib-nbextensions==0.5.1
