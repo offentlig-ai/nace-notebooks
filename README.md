@@ -18,16 +18,17 @@ git lfs pull
 ## Create and use a virtual environment
 
 ```
-cd <your environment folder>
-python3 -m venv .venv
+git clone https://github.com/offentlig-ai/nace-notebooks.git
+cd nace-notebooks
+python -m venv .venv
 source .venv/bin/activate
 ```
 
 ## Install software
 
 ```
-pip3 install wheel
-pip3 install --no-cache-dir -r requirements.txt
+pip install wheel
+pip install --no-cache-dir -r requirements.txt
 ```
 
 ## Usage
@@ -35,7 +36,7 @@ pip3 install --no-cache-dir -r requirements.txt
 To work interactively with the notebooks, you need to install a ipykernel inside your virtual environment
 
 ```
-python -m ipykernel install --user --name .venv --display-name "Python (.venv)"
+python -m ipykernel install --user --name .venv --display-name "Python3 (.venv)"
 cd notebooks
 jupyter notebook
 ```

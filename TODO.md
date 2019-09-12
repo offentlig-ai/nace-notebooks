@@ -1,2 +1,3 @@
 - [ ] Upload the model to Cloud Storage, cf <https://cloud.google.com/ml-engine/docs/deploying-models>
 - [ ] Decide wich files should be added to .gitignore
+- [ ] Evaluate performance with a confusion matrix, cv <https://gist.github.com/loretoparisi/41b918add11893d761d0ec12a3a4e1aa>
